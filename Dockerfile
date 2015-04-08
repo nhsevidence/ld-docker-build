@@ -9,6 +9,7 @@ RUN \
 
 RUN apt-get install -y \
     mono-complete \
+    fsharp \
     libtool \
     autoconf \
     g++ \
@@ -22,7 +23,7 @@ RUN apt-get install -y \
     pandoc \
     haskell-platform
 
-RUN apt-get install -y nodejs npm mono-complete &&\
+RUN apt-get install -y nodejs npm &&\
     npm install -g grunt &&\
     ln /usr/bin/nodejs /usr/bin/node
 
